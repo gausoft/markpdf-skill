@@ -47,9 +47,48 @@ The skill bundles **8 reference recipes** (academic paper, pitch deck, executive
 | `convert_markdown_to_slides` | Slide deck (PDF or PPTX) | Counts toward daily quota |
 | `create_share_link` | Default delivery channel — clean `markpdf.app/d/…` URL | Free |
 
-## Themes
+## Themes — gallery
 
-5 free themes (`slate`, `paper`, `ivory`, `dusk`, `executive`) + Pro themes including `aurora`, `consul`, `scholar`, `obsidian`, `quill`, `midnight`, and more. See [the full catalog](https://markpdf.app/themes) or run `list_themes` from inside Claude.
+A taste of what the skill produces. **Free** themes work with any token; **Pro** unlock with a license key (LTD $19).
+
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <img src="previews/paper.png" alt="Paper theme — editorial longform" width="100%"><br>
+      <b>Paper</b> · <sub>Free</sub><br>
+      <sub>Editorial longform · Lora</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="previews/slate.png" alt="Slate theme — Linear/Notion clean" width="100%"><br>
+      <b>Slate</b> · <sub>Free</sub><br>
+      <sub>Linear/Notion clean · Inter</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="previews/consul.png" alt="Consul theme — corporate consulting" width="100%"><br>
+      <b>Consul</b> · <sub>Pro</sub><br>
+      <sub>Corporate / consulting</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="33%">
+      <img src="previews/aurora.png" alt="Aurora theme — startup pitch" width="100%"><br>
+      <b>Aurora</b> · <sub>Pro</sub><br>
+      <sub>Startup pitch · vibrant</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="previews/obsidian.png" alt="Obsidian theme — luxury dark" width="100%"><br>
+      <b>Obsidian</b> · <sub>Pro</sub><br>
+      <sub>Luxury / premium dark</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="previews/midnight.png" alt="Midnight theme — dark mode tech" width="100%"><br>
+      <b>Midnight</b> · <sub>Pro</sub><br>
+      <sub>Dark mode tech / dev</sub>
+    </td>
+  </tr>
+</table>
+
+Plus `ivory`, `dusk`, `executive`, `prose`, `folio`, `scholar`, `academic`, `hertz`, `quill`, `rosepine`, `horizon` and more. See the [full catalog](https://markpdf.app/themes) or run `list_themes` from inside Claude.
 
 ## Bundle structure
 
@@ -58,7 +97,8 @@ markpdf-skill/
 ├── SKILL.md              # Manifest + golden rules + variation playbook
 ├── references/           # On-demand docs (workflows, themes, slides, customization, frontmatter)
 ├── examples/             # Ready-to-render samples (academic, pitch-deck, report)
-└── scripts/              # render.sh (curl fallback) + open-url.sh (OS-aware)
+├── scripts/              # render.sh (curl fallback) + open-url.sh (OS-aware)
+└── previews/             # Theme gallery PNGs (rendered from a deterministic sample)
 ```
 
 ## Updating
