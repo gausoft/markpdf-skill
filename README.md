@@ -25,13 +25,31 @@ npx skills add gausoft/markpdf-skill -a vscode        # VS Code
 
 See [skills.sh](https://skills.sh) for the full list of supported agents.
 
+## Quick start (Claude Code, copy-paste)
+
+Three commands, no signup, ~30 s. Restart Claude Code after step 3, then say *"Make a PDF of this markdown"*.
+
+```bash
+# 1. Install the skill
+npx skills add gausoft/markpdf-skill -a claude-code -y -g
+
+# 2. Mint a free trial token (2 exports/day, no signup)
+TOKEN=$(curl -sX POST https://markpdf.app/api/mcp/trial-token | jq -r .token)
+
+# 3. Wire the MCP server into Claude Code
+claude mcp add --transport http markpdf https://markpdf.app/mcp \
+  --header "Authorization: Bearer $TOKEN"
+```
+
+> 🛟 **Already have a token from before?** Trial tokens are IP-rate-limited (one per 24 h) and shown only at issuance. If you lost yours, either wait for the cooldown or grab a Pro token at [`markpdf.app/account/mcp`](https://markpdf.app/account/mcp) — Pro starts at $5/mo or LTD $19.
+
 ## Prerequisites
 
-The skill drives the **MarkPDF MCP server**. Configure it for your agent before installing — setup snippets for Claude Code, Cursor, and others:
+The skill drives the **MarkPDF MCP server**. Setup snippets for Cursor, Claude Desktop, GitHub Copilot, VS Code, and others:
 
 👉 **<https://markpdf.app/integrations/mcp>**
 
-No signup needed for a trial token — `whoami` accepts a free token and grants 2 exports/day. Pro keys (LTD $19) unlock unlimited exports + all 15 themes + custom fonts.
+Pro keys (LTD $19) unlock unlimited exports + all 15 themes + custom fonts.
 
 ## What this skill does
 
