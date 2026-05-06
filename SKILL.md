@@ -1,6 +1,6 @@
 ---
 name: markpdf
-description: Convert Markdown into premium-themed PDFs, slide decks (PPTX or PDF), styled HTML, and shareable links via the MarkPDF MCP server. Use whenever the user wants to produce a polished document, report, whitepaper, slide deck, pitch, academic paper, résumé, invoice, or share a styled Markdown URL — and the raw output of plain Markdown won't be enough. Also use when the user asks "make a PDF", "export to PowerPoint", "turn this into slides", "send me a printable version", or mentions Marp, KaTeX, or Mermaid in a document context. Requires the MarkPDF MCP server to be configured (see https://markpdf.app/integrations/mcp).
+description: Convert Markdown to premium-themed PDFs, slide decks (PPTX/PDF), styled HTML, and shareable links via the MarkPDF MCP server. Use when raw Markdown isn't enough — reports, pitches, academic papers, résumés, decks, printable docs.
 ---
 
 # MarkPDF Skill
