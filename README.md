@@ -4,6 +4,14 @@
 
 This is the official skill for [MarkPDF](https://markpdf.app), built on the open [Agent Skills standard](https://agentskills.io). It works across **Claude Code**, **Cursor**, **GitHub Copilot**, **VS Code**, and the rest of the [skills.sh](https://skills.sh) ecosystem.
 
+## Why this skill?
+
+- 🏛 **Hosted MCP — no toolchain on your machine.** The agent calls `markpdf.app/mcp` directly. No Python, no Chromium download, no `pip install`.
+- 🎨 **15 designer themes**, not generic dark/light. Notion-clean, McKinsey-corporate, academic, luxury, dark-mode, handwritten — picked by taste, not templates.
+- 📊 **Beyond PDF** — slide decks (Marp, PDF or editable PPTX), styled HTML for previews, and **revocable share links** (`markpdf.app/d/<id>`) with optional email gate, password, expiry.
+- 🧮 **KaTeX + Mermaid + GFM out of the box.**
+- 🛡 **MIT** + free 2 exports/day instantly with a trial token. No signup.
+
 ## Install
 
 Pick the flag that matches your agent:
